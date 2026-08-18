@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top, rgb(190, 228, 253), rgb(254, 246, 246));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+}
+
+.container h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.entrada {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    padding: 10px 12px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.entrada:focus,
+.entrada:hover {
+    border-color: rgb(8, 78, 189);
+    box-shadow: 0 0 0 3px rgba(8, 78, 189, 0.15);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #084ebd, #063c96);
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(8, 78, 189, 0.35);
+
+    transition: all 0.2s ease-in-out;
+}
+
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #0a58d6, #0747b0);
+    box-shadow: 0 6px 18px rgba(8, 78, 189, 0.5);
+    transform: translateY(-2px);
+}
+
+
+.btn-submit:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(8, 78, 189, 0.3);
+}
+
+.btn-submit:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(8, 78, 189, 0.4), 0 4px 12px rgba(8, 78, 189, 0.35);
+}
