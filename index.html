@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro de usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contenedor-registro" id="seccion-principal-registro">
+        <h2>Formulario de registro de usuarios</h2>
+
+        <form id="formulario-registro">
+
+            <div class="grupo-formulario" id="grupo-nombre">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            </div>
+
+            <div class="grupo-formulario" id="grupo-apellido">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+            </div>
+
+            <div class="grupo-formulario campo-seleccion" id="grupo-tipo-documento">
+                <label for="tipo_documento">Tipo de documento</label>
+                <select id="tipo_documento" name="tipo_documento">
+                    <option value="" disabled>Seleccione un tipo...</option>
+                    <option value="CC" selected>Cédula de Ciudadanía</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="PA">Pasaporte</option>
+                </select>
+            </div>
+
+            <div class="grupo-formulario" id="grupo-numero-documento">
+                <label for="numero_documento">Número de documento (DNI)</label>
+                <input type="text" id="numero_documento" name="numero_documento" placeholder="Número de documento">
+            </div>
+
+            <div class="grupo-formulario" id="grupo-fecha-nacimiento">
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+
+            <div class="grupo-formulario" id="grupo-telefono">
+                <label for="telefono">Número de teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono">
+            </div>
+
+            <div class="grupo-formulario" id="grupo-email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="grupo-formulario campo-seleccion" id="grupo-pais">
+                <label for="pais">País de domicilio</label>
+                <select id="pais" name="pais">
+                    <option value="" disabled>Seleccione un país...</option>
+                    <option value="CO" selected>Colombia</option>
+                    <option value="MX">México</option>
+                    <option value="AR">Argentina</option>
+                    <option value="ES">España</option>
+                    <option value="US">Estados Unidos</option>
+                </select>
+            </div>
+
+            <div class="grupo-formulario campo-seleccion" id="grupo-ciudad">
+                <label for="ciudad">Ciudad de domicilio</label>
+                <select id="ciudad" name="ciudad">
+                    <option value="" selected disabled>Seleccione una ciudad...</option>
+
+                    <option id="ciudad-11001" value="11001">Bogotá, D.C</option>
+                    <option id="ciudad-05001" value="05001">Medellín</option>
+                    <option id="ciudad-76001" value="76001">Cali</option>
+
+                    <option id="ciudad-49301" value="49301">Ciudad de México</option>
+                    <option id="ciudad-49302" value="49302">Guadalajara</option>
+                    <option id="ciudad-49303" value="49303">Monterrey</option>
+
+                    <option id="ciudad-06301" value="06301">Buenos Aires</option>
+                    <option id="ciudad-06302" value="06302">Córdoba</option>
+                    <option id="ciudad-06303" value="06303">Rosario</option>
+
+                    <option id="ciudad-24501" value="24501">Madrid</option>
+                    <option id="ciudad-24502" value="24502">Barcelona</option>
+                    <option id="ciudad-24503" value="24503">Valencia</option>
+
+                    <option id="ciudad-24901" value="24901">Nueva York</option>
+                    <option id="ciudad-24902" value="24902">Los Ángeles</option>
+                    <option id="ciudad-24903" value="24903">Miami</option>
+                </select>
+            </div>
+
+            <div class="grupo-formulario contenedor-terminos" id="grupo-terminos">
+                <label for="terminos">Acepto los términos y condiciones</label>
+                <input type="checkbox" id="terminos" name="terminos">
+            </div>
+
+            <div class="grupo-formulario contenedor-boton" id="grupo-boton-submit">
+                <button type="submit" id="btn-registrarse" class="btn-primario">Registrarse</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
